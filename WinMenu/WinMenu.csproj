@@ -76,6 +76,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Forms\FileListForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Forms\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -90,13 +94,7 @@
     <Compile Include="Controls\FolderControl.xaml.cs">
       <DependentUpon>FolderControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Database\File.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="Database\FilePartial.cs" />
-    <Compile Include="Database\Folder.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="Database\Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -112,8 +110,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Database\Object.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Type.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AddForm.xaml.cs">
       <DependentUpon>AddForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FileListForm.xaml.cs">
+      <DependentUpon>FileListForm.xaml</DependentUpon>
     </Compile>
     <Compile Include="Forms\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -121,8 +128,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helper\BitmapHelper.cs" />
     <Compile Include="Helper\DBHelper.cs" />
     <Compile Include="Helper\FileFolder.cs" />
+    <Compile Include="Helper\ObjectListHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -1179,6 +1188,10 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Resource Include="icons\160 - C0xudX2.png" />
+    <Resource Include="icons\163 - qPJvyr6.png" />
+    <Resource Include="icons\51 - q6GEiFF.png" />
+    <Resource Include="icons\78 - yppNMue.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

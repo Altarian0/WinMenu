@@ -9,8 +9,8 @@ namespace WinMenu.Helper
 {
     public class DBHelper
     {
-        private static WinMenuEntities Context = new WinMenuEntities();
-        public static WinMenuEntities GetContext()
+        private static WinMenu2Entities Context = new WinMenu2Entities();
+        public static WinMenu2Entities GetContext()
         {
             return Context;
         }

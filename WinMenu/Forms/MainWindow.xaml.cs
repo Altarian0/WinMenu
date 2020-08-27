@@ -28,7 +28,7 @@ namespace WinMenu.Forms
             InitializeComponent();
 
 
-            MainList.ItemsSource =  new ObservableCollection<Folder>(DBHelper.GetContext().Folder.ToList());
+            //MainList.ItemsSource =  new ObservableCollection<Folder>(DBHelper.GetContext().Folder.ToList());
         }
 
         private void AddButton_Click(object sender, RoutedEventArgs e)

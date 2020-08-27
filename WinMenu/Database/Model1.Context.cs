@@ -13,10 +13,10 @@ namespace WinMenu.Database
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class WinMenuEntities : DbContext
+    public partial class WinMenu2Entities : DbContext
     {
-        public WinMenuEntities()
-            : base("name=WinMenuEntities")
+        public WinMenu2Entities()
+            : base("name=WinMenu2Entities")
         {
         }
     
@@ -25,7 +25,7 @@ namespace WinMenu.Database
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<File> File { get; set; }
-        public virtual DbSet<Folder> Folder { get; set; }
+        public virtual DbSet<Object> Object { get; set; }
+        public virtual DbSet<Type> Type { get; set; }
     }
 }
