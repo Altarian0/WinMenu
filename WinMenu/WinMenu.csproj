@@ -1188,6 +1188,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Content Include="script.sql" />
     <Resource Include="icons\160 - C0xudX2.png" />
     <Resource Include="icons\163 - qPJvyr6.png" />
     <Resource Include="icons\51 - q6GEiFF.png" />
